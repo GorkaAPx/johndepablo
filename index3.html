@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Design</title>
+  <style>
+    @font-face {
+      font-family: myFirstFont;
+      src: url(FONTS/Eastman-Grotesque-Extrabold-trial.otf);
+    }
+    @font-face {
+      font-family: mySecondFont;
+      src: url(FONTS/MergePro.otf);
+    }
+
+
+    .a1{
+    position: relative;
+    right: 75%;
+    margin-top: 25%;
+
+    }
+
+    .a2{
+  position: relative;
+  right: 39%;
+  margin-top: 25%;
+
+
+
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      background: #00AB8E;
+      color: white;
+      display: flex;
+      
+      justify-content: space-between;
+      padding: 1rem 5%;
+      height: 120px; /* Altura del header más grande en dispositivos grandes */
+
+    }
+
+    .logo {
+     max-width: 100%;
+     left: 6%;
+     max-height: 70%;
+     position: relative;
+    }
+
+    .header a {
+      font-family: myFirstFont;
+      font-size: 1.2rem;
+      color: white;
+      text-decoration: none;
+   
+    }
+
+    .cuerpo {
+      background: white;
+      padding: 2rem 5%;
+      color: black;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .cuerpo .divt1 {
+      flex: 1;
+      padding-right: 2rem;
+    }
+
+    .cuerpo .a3 {
+      font-family: myFirstFont;
+      font-size: 2rem; /* Tamaño base */
+      color: #00AB8E;
+      margin-top: 2rem; /* Se añade un margen superior en pantallas pequeñas */
+    }
+
+    .cuerpo p {
+      font-family: mySecondFont;
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    .goblinmobile {
+      width: 100%;
+      max-width: 300px;
+      margin: 2rem auto;
+    }
+
+    .buttondesk {
+      width: 100%;
+      max-width: 150px;
+      display: block;
+      margin: 1rem auto;
+    }
+
+    .buttons {
+      width: 100%;
+      max-width: 200px;
+      display: block;
+      margin: 1rem auto;
+    }
+
+    .finalfoot {
+     
+
+        background: #00AB8E;
+      padding: 2rem 5%;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+
+    .finalfoot2 {
+     
+      background: white;
+      padding: 2rem 5%;
+      color: black;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+    .donos{
+
+
+    width: 0%;
+    max-width: 0;
+    left-margin: 10%;
+
+ 
+    }
+    .iratxe{
+      position: relative;
+      left: 15%;
+    width: 60%;
+    max-width: 300px;
+    }
+
+    .a4{
+      font-family: myFirstFont;
+      font-size: 2rem; /* Tamaño base */
+      color: white;
+      margin-top: 2rem; /* Se añade un margen superior en pantallas pequeñas */
+    }
+     .finalfoot p {
+      font-family: mySecondFont;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    .finalfoot2 p {
+      font-family: mySecondFont;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: black;
+    }
+    .a5 {
+        font-size: 2rem; /* Aumentamos el tamaño del texto */
+        margin-top: 2rem; /* Aumentamos el margen para que el texto quede más abajo */
+        color: black;
+         font-family: myFirstFont;
+         position: relative;
+         margin-right: 0%;
+      }
+       .footermedia{
+ 
+     background: black;
+      color: white;
+      left: 1rem;
+      padding: 1rem;
+      margin: 0;
+      display: flow;
+      margin-top: 52%;
+
+    }
+   .footermedia img{
+      width: 23%;
+      
+      
+    }
+    .prif{
+      margin-left: 5%;
+    }
+    .prof{
+       margin-left: 10%;
+
+    }
+    .pruf{
+       margin-left: 10%;
+
+    }
+    input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #00AB8E;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left: 1%;
+} 
+
+
+   
+
+    /* Media Queries */
+
+
+    @media (min-width: 1024px) {
+     
+
+      .logo {
+       max-width: 15%; /* Logo más grande */
+      height: auto;
+      margin-left: 150px; /* Alineamos el logo completamente a la izquierda */
+      position: absolute; /* Para que se mueva completamente a la izquierda */
+      left: 0; /* Alineamos el logo al borde izquierdo de la pantalla */
+      margin-top: 1%;
+
+      }
+
+      .cuerpo .a3 {
+        font-size: 6rem; /* Aumentamos el tamaño del texto */
+        margin-top: 4rem; /* Aumentamos el margen para que el texto quede más abajo */
+      }
+
+      .cuerpo p {
+      font-family: mySecondFont;
+      font-size: 1.4rem;
+      line-height: 0.5;
+    }
+
+      .buttondesk {
+      width: 30%;
+      max-width: 100%;
+      display: block;
+      margin: 0;
+    }
+
+      .buttons {
+        max-width: 400px;
+        margin: 0;
+      }
+        .goblinmobile {
+      max-width: 100%;
+      width: 40%;
+     
+     
+    }
+    .header a {
+      font-family: myFirstFont;
+      font-size: 1.25rem;
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+    }
+    .a1{
+
+      position: relative;
+      left: 80%;
+      margin-top: 2%;
+    }
+        .a2{
+
+      position: relative;
+      left: 0%;
+      margin-top: 2%;
+    }
+      .a4 {
+        font-size: 5rem; /* Aumentamos el tamaño del texto */
+        margin-top: 4rem; /* Aumentamos el margen para que el texto quede más abajo */
+        color: white;
+         font-family: myFirstFont;
+         position: relative;
+         margin-left: 0%;
+      }
+       .finalfoot p {
+      font-family: mySecondFont;
+      font-size: 1.4rem;
+      line-height: 1.5;
+    }
+    .donos{
+
+      width: 40%;
+      height: 40%;
+      float: right;
+      margin-top: 0%;
+      max-width: 10000%;
+    }
+    .iratxe{
+
+      width: 30%;
+      height: 30%;
+      float: left;
+      margin-right: 20%;
+      margin-bottom: 10%;
+      left: 0%;
+      
+    }
+    .a5 {
+        font-size: 5rem; /* Aumentamos el tamaño del texto */
+        margin-top: 5rem; /* Aumentamos el margen para que el texto quede más abajo */
+        color: black;
+         font-family: myFirstFont;
+         position: relative;
+         margin-right: 0%;
+      }
+
+.finalfoot2 p {
+      font-family: mySecondFont;
+      font-size: 1.4rem;
+      line-height: 1.5;
+      color: black;
+    }
+    .finalfoot2{
+
+
+     background: white;
+      color: black;
+      left: 1rem;
+      padding: 10rem;
+      margin: 0;
+      display: flow;
+
+    }
+     .finalfoot{
+ 
+     background: #00AB8E;
+      color: white;
+      left: 1rem;
+      padding: 10rem;
+      margin: 0;
+      display: flow;
+
+    }
+     .footermedia{
+ 
+     background: black;
+      color: white;
+      left: 1rem;
+      padding: 1rem;
+      margin: 0;
+      display: flow;
+
+    }
+    .footermedia img{
+      width: 10%;
+      
+      
+    }
+    .prif{
+      margin-left: 15%;
+    }
+    .prof{
+       margin-left: 20%;
+
+    }
+    .pruf{
+       margin-left: 20%;
+
+    }
+      .header a:hover {
+      
+      font-size: 1.5rem;
+     
+    }
+     /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #00AB8E;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left: 18%;
+} 
+
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img class="logo" src="Recursos/tipitopa.png" alt="Logo">
+  
+      <a class="a1" href="funtzioak.html">Funtzioak</a>
+      <a class="a2" href="index.html">TipiTopa</a>
+  
+  </div>
+
+  <div class="cuerpo">
+ <div class="container">
+  
+
+    <label for="fname">Izena</label>
+    <input type="text" id="fname" name="firstname" placeholder="Zure izena...">
+
+    <label for="lname">Helbide elektronikoa</label>
+    <input type="text" id="lname" name="lastname" placeholder="Zure helbide elektronikoa...">
+
+    <label for="country">Probintzia</label>
+    <select id="country" name="country">
+      <option value="Araba">Araba</option>
+      <option value="Bizkaia">Bizkaia</option>
+      <option value="Gipuzkoa">Gipuzkoa</option>
+    </select>
+
+    <label for="subject">Kontsulta</label>
+    <textarea id="subject" name="subject" placeholder="Zure kontsulta..." style="height:200px"></textarea>
+
+   <a href="index.html"> <input type="submit" value="Bidali"> </a>
+
+
+</div> 
+
+
+
+
+
+  </div>
+  <div class="footermedia">
+    <img class="prif" src="Recursos/local.png"> <img class="prof"  src="Recursos/tlf.png"> <img class="pruf" src="Recursos/enviar.png">
+</div>
+  
+</body>
+</html>

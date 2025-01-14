@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Design</title>
+  <style>
+    /* Fuentes */
+    @font-face {
+      font-family: myFirstFont;
+      src: url(FONTS/Eastman-Grotesque-Extrabold-trial.otf);
+    }
+
+    @font-face {
+      font-family: mySecondFont;
+      src: url(FONTS/MergePro.otf);
+    }
+
+    /* Estilos generales */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+        .a1{
+    position: relative;
+    right: 75%;
+    margin-top: 25%;
+
+    }
+
+    .a2{
+  position: relative;
+  right: 39%;
+  margin-top: 25%;
+
+
+
+    }
+
+    .header {
+      background: #00AB8E;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 5%;
+      height: 120px; /* Altura del header más grande en dispositivos grandes */
+    }
+     
+    .logo {
+      max-width: 100%;
+      left: 6%;
+      max-height: 70%;
+      position: relative;
+    }
+
+    .header a {
+      font-family: myFirstFont;
+      font-size: 1.2rem;
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Estilos cuerpo */
+    .cuerpo {
+      background: white;
+      padding: 2rem 5%;
+      color: black;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .cuerpo .divt1 {
+      flex: 1;
+      padding-right: 2rem;
+    }
+
+    .cuerpo .a3 {
+      font-family: myFirstFont;
+      font-size: 2rem;
+      color: #00AB8E;
+      margin-top: 2rem;
+    }
+
+    .cuerpo p {
+      font-family: mySecondFont;
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    .goblinmobile {
+      width: 100%;
+      max-width: 300px;
+      margin: 2rem auto;
+    }
+
+    .buttondesk, .buttons {
+      width: 100%;
+      max-width: 200px;
+      display: block;
+      margin: 1rem auto;
+    }
+
+    /* Estilos pie de página */
+    .finalfoot, .finalfoot2 {
+      padding: 2rem 5%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .finalfoot {
+      background: #00AB8E;
+      color: white;
+    }
+
+    .finalfoot2 {
+      background: white;
+      color: black;
+    }
+
+    .donos {
+      width: 0%;
+      max-width: 0;
+    }
+
+    .iratxe {
+      position: relative;
+      left: 15%;
+      width: 60%;
+      max-width: 300px;
+    }
+
+    .a4, .a5 {
+      font-family: myFirstFont;
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+
+    .finalfoot p, .finalfoot2 p {
+      font-family: mySecondFont;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    /* Estilos de las imágenes */
+    .donos {
+      width: 40%;
+      height: 40%;
+      float: right;
+    }
+
+    .iratxe {
+      width: 30%;
+      height: 30%;
+      float: left;
+      margin-right: 20%;
+      margin-bottom: 10%;
+    }
+    .i1{
+        width: 0%;
+        height: 0%;
+
+      }
+      .i2{
+        width: 0%;
+        height: 0%;
+
+      }
+      .i3{
+        width: 0%;
+        height: 0%;
+
+      }
+       .b1{
+        width: 100%;
+        height: 100%;
+
+      }
+      .b2{
+        width: 100%;
+        height: 100%;
+
+      }
+      .b3{
+        width: 100%;
+        height: 100%;
+
+      }
+       .footermedia{
+ 
+     background: black;
+      color: white;
+      left: 1rem;
+      padding: 1rem;
+      margin: 0;
+      display: flow;
+
+    }
+    .footermedia img{
+      width: 23%;
+      
+      
+    }
+    .prif{
+      margin-left: 5%;
+    }
+    .prof{
+       margin-left: 10%;
+
+    }
+    .pruf{
+       margin-left: 10%;
+
+    }
+
+    /* Media Queries */
+    @media (min-width: 1024px) {
+      .logo {
+        max-width: 15%;
+        height: auto;
+        margin-left: 150px;
+        position: absolute;
+        left: 0;
+         margin-top: 1%;
+      }
+
+      .cuerpo .a3 {
+        font-size: 6rem;
+        margin-top: 4rem;
+      }
+
+      .cuerpo p {
+        font-family: mySecondFont;
+        font-size: 1.4rem;
+        line-height: 0.5;
+      }
+
+      .buttondesk {
+        width: 30%;
+        max-width: 100%;
+        margin: 0;
+      }
+
+      .buttons {
+        max-width: 400px;
+        margin: 0;
+      }
+
+      .goblinmobile {
+        width: 40%;
+        max-width: 100%;
+      }
+
+      .header a {
+        font-family: myFirstFont;
+        font-size: 1.25rem;
+        color: white;
+        text-decoration: none;
+        margin-left: 1.5rem;
+      }
+
+      .a1 {
+        position: relative;
+        left: 80%;
+        margin-top: 2%;
+      }
+
+      .a2 {
+        position: relative;
+        left: 0%;
+        margin-top: 2%;
+      }
+
+      .a4 {
+        font-size: 5rem;
+        margin-top: 4rem;
+        color: white;
+        font-family: myFirstFont;
+      }
+
+      .donos {
+        width: 40%;
+        height: 40%;
+        float: right;
+        margin-top: 0%;
+      }
+
+      .iratxe {
+        width: 30%;
+        height: 30%;
+        float: left;
+        margin-right: 20%;
+        margin-bottom: 10%;
+        left: 0%;
+      }
+
+      .a5 {
+        font-size: 5rem;
+        margin-top: 5rem;
+        color: black;
+        font-family: myFirstFont;
+      }
+      .i1{
+        width: 100%;
+        height: 100%;
+
+      }
+      .i2{
+        width: 100%;
+        height: 100%;
+
+      }
+      .i3{
+        width: 100%;
+        height: 100%;
+
+      }
+       .b1{
+        width: 0%;
+        height: 0%;
+
+      }
+      .b2{
+        width: 0%;
+        height: 0%;
+
+      }
+      .b3{
+        width: 0%;
+        height: 0%;
+
+      }
+       .footermedia{
+ 
+     background: black;
+      color: white;
+      left: 1rem;
+      padding: 1rem;
+      margin: 0;
+      display: flow;
+
+    }
+    .footermedia img{
+      width: 10%;
+      
+      
+    }
+    .prif{
+      margin-left: 15%;
+    }
+    .prof{
+       margin-left: 20%;
+
+    }
+    .pruf{
+       margin-left: 20%;
+
+    }
+      .header a:hover {
+      
+      font-size: 1.5rem;
+     
+    }
+
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img class="logo" src="Recursos/tipitopa.png" alt="Logo">
+    <a class="a1" href="index.html">TipiTopa</a>
+    <a class="a2" href="index3.html">Kontaktua</a>
+  </div>
+  <div class="cuerpo">
+<img class="i1" src="Recursos/behatu.png"> 
+<img class="b1" src="Recursos/behatum.png"> 
+
+  </div>
+  <div class="finalfoot">
+    <img class="i2" src="Recursos/ikasi.png"> 
+    <img class="b2" src="Recursos/ikasim.png"> 
+  </div>
+  <div class="finalfoot2">
+    <img class="i3" src="Recursos/batu.png"> 
+     <img class="b3" src="Recursos/batum.png"> 
+  </div>
+
+  </div>
+  <div class="footermedia">
+    <img class="prif" src="Recursos/local.png"> <img class="prof"  src="Recursos/tlf.png"> <img class="pruf" src="Recursos/enviar.png">
+</div>
+  
+  
+</body>
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Design</title>
+  <style>
+    @font-face {
+      font-family: myFirstFont;
+      src: url(FONTS/Eastman-Grotesque-Extrabold-trial.otf);
+    }
+    @font-face {
+      font-family: mySecondFont;
+      src: url(FONTS/MergePro.otf);
+    }
+
+
+    .a1{
+    position: relative;
+    right: 75%;
+    margin-top: 25%;
+
+    }
+
+    .a2{
+  position: relative;
+  right: 39%;
+  margin-top: 25%;
+
+
+
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      background: #00AB8E;
+      color: white;
+      display: flex;
+      
+      justify-content: space-between;
+      padding: 1rem 5%;
+      height: 120px; /* Altura del header más grande en dispositivos grandes */
+
+    }
+
+    .logo {
+     max-width: 100%;
+     left: 6%;
+     max-height: 70%;
+     position: relative;
+    }
+
+    .header a {
+      font-family: myFirstFont;
+      font-size: 1.2rem;
+      color: white;
+      text-decoration: none;
+   
+    }
+
+    .cuerpo {
+      background: white;
+      padding: 2rem 5%;
+      color: black;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .cuerpo .divt1 {
+      flex: 1;
+      padding-right: 2rem;
+    }
+
+    .cuerpo .a3 {
+      font-family: myFirstFont;
+      font-size: 2rem; /* Tamaño base */
+      color: #00AB8E;
+      margin-top: 2rem; /* Se añade un margen superior en pantallas pequeñas */
+    }
+
+    .cuerpo p {
+      font-family: mySecondFont;
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    .goblinmobile {
+      width: 100%;
+      max-width: 300px;
+      margin: 2rem auto;
+    }
+
+    .buttondesk {
+      width: 100%;
+      max-width: 150px;
+      display: block;
+      margin: 1rem auto;
+    }
+
+    .buttons {
+      width: 100%;
+      max-width: 200px;
+      display: block;
+      margin: 1rem auto;
+    }
+
+    .finalfoot {
+     
+
+        background: #00AB8E;
+      padding: 2rem 5%;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+
+    .finalfoot2 {
+     
+      background: white;
+      padding: 2rem 5%;
+      color: black;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+    .donos{
+
+
+    width: 0%;
+    max-width: 0;
+    left-margin: 10%;
+
+ 
+    }
+    .iratxe{
+      position: relative;
+      left: 15%;
+    width: 60%;
+    max-width: 300px;
+    }
+
+    .a4{
+      font-family: myFirstFont;
+      font-size: 2rem; /* Tamaño base */
+      color: white;
+      margin-top: 2rem; /* Se añade un margen superior en pantallas pequeñas */
+    }
+     .finalfoot p {
+      font-family: mySecondFont;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    .finalfoot2 p {
+      font-family: mySecondFont;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: black;
+    }
+    .a5 {
+        font-size: 2rem; /* Aumentamos el tamaño del texto */
+        margin-top: 2rem; /* Aumentamos el margen para que el texto quede más abajo */
+        color: black;
+         font-family: myFirstFont;
+         position: relative;
+         margin-right: 0%;
+      }
+       .footermedia{
+ 
+     background: black;
+      color: white;
+      left: 1rem;
+      padding: 1rem;
+      margin: 0;
+      display: flow;
+
+    }
+   .footermedia img{
+      width: 23%;
+      
+      
+    }
+    .prif{
+      margin-left: 5%;
+    }
+    .prof{
+       margin-left: 10%;
+
+    }
+    .pruf{
+       margin-left: 10%;
+
+    }
+
+
+   
+
+    /* Media Queries */
+
+
+    @media (min-width: 1024px) {
+     
+
+      .logo {
+       max-width: 15%; /* Logo más grande */
+      height: auto;
+      margin-left: 150px; /* Alineamos el logo completamente a la izquierda */
+      position: absolute; /* Para que se mueva completamente a la izquierda */
+      left: 0; /* Alineamos el logo al borde izquierdo de la pantalla */
+      margin-top: 1%;
+
+      }
+
+      .cuerpo .a3 {
+        font-size: 6rem; /* Aumentamos el tamaño del texto */
+        margin-top: 4rem; /* Aumentamos el margen para que el texto quede más abajo */
+      }
+
+      .cuerpo p {
+      font-family: mySecondFont;
+      font-size: 1.4rem;
+      line-height: 0.5;
+    }
+
+      .buttondesk {
+      width: 30%;
+      max-width: 100%;
+      display: block;
+      margin: 0;
+    }
+
+      .buttons {
+        max-width: 400px;
+        margin: 0;
+      }
+        .goblinmobile {
+      max-width: 100%;
+      width: 40%;
+     
+     
+    }
+    .header a {
+      font-family: myFirstFont;
+      font-size: 1.25rem;
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+    }
+    .header a:hover {
+      
+      font-size: 1.5rem;
+     
+    }
+    .a1{
+
+      position: relative;
+      left: 80%;
+      margin-top: 2%;
+    }
+        .a2{
+
+      position: relative;
+      left: 0%;
+      margin-top: 2%;
+    }
+      .a4 {
+        font-size: 5rem; /* Aumentamos el tamaño del texto */
+        margin-top: 4rem; /* Aumentamos el margen para que el texto quede más abajo */
+        color: white;
+         font-family: myFirstFont;
+         position: relative;
+         margin-left: 0%;
+      }
+       .finalfoot p {
+      font-family: mySecondFont;
+      font-size: 1.4rem;
+      line-height: 1.5;
+    }
+    .donos{
+
+      width: 40%;
+      height: 40%;
+      float: right;
+      margin-top: 0%;
+      max-width: 10000%;
+    }
+    .iratxe{
+
+      width: 30%;
+      height: 30%;
+      float: left;
+      margin-right: 20%;
+      margin-bottom: 10%;
+      left: 0%;
+      
+    }
+    .a5 {
+        font-size: 5rem; /* Aumentamos el tamaño del texto */
+        margin-top: 5rem; /* Aumentamos el margen para que el texto quede más abajo */
+        color: black;
+         font-family: myFirstFont;
+         position: relative;
+         margin-right: 0%;
+      }
+
+.finalfoot2 p {
+      font-family: mySecondFont;
+      font-size: 1.4rem;
+      line-height: 1.5;
+      color: black;
+    }
+    .finalfoot2{
+
+
+     background: white;
+      color: black;
+      left: 1rem;
+      padding: 10rem;
+      margin: 0;
+      display: flow;
+
+    }
+     .finalfoot{
+ 
+     background: #00AB8E;
+      color: white;
+      left: 1rem;
+      padding: 10rem;
+      margin: 0;
+      display: flow;
+
+    }
+     .footermedia{
+ 
+     background: black;
+      color: white;
+      left: 1rem;
+      padding: 1rem;
+      margin: 0;
+      display: flow;
+
+    }
+    .footermedia img{
+      width: 10%;
+      
+      
+    }
+    .prif{
+      margin-left: 15%;
+    }
+    .prof{
+       margin-left: 20%;
+
+    }
+    .pruf{
+       margin-left: 20%;
+
+    }
+
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img class="logo" src="Recursos/tipitopa.png" alt="Logo">
+  
+      <a class="a1" href="funtzioak.html">Funtzioak</a>
+      <a class="a2" href="index3.html">Kontaktua</a>
+  
+  </div>
+
+  <div class="cuerpo">
+    <div class="divt1">
+      <a class="a3">Errespetuz bidaiatu,</a><br>
+      <a class="a3">helmuga aberastu.</a><br>
+      <p>TipiTopak turismo jasangarria berrasmatzen du, bidaiarien eta tokiko komunitateen</p>
+      <p>arteko lotura indartuz. Bisitariei zein helmugei mesede egiten dieten benetako</p>
+      <p>esperientziak eskaintzen ditu, turismo arduratsua eta errespetuzkoa sustatuz</p>
+           <br>
+      <p>Bat egin eta bidaia bakoitza esperientzia positibo batean bihurtu guztiontzat</p>
+      <a href="">  <img class="buttondesk" src='Recursos/btn.png' onmouseover="this.src='Recursos/btninv.png';" onmouseout="this.src='Recursos/btn.png';">
+</a>
+      <img class="buttons" src="Recursos/botones.png" alt="Buttons">
+    </div>
+    <img class="goblinmobile" src="Mesa de trabajo 7.png" alt="Image">
+  </div>
+
+  <div class="finalfoot">
+    <img src="Recursos/donos.png" class="donos">
+    <a class="a4"> Turismo iraunkorrerako <br> ikuspegi berri bat </a>  <br> <br> <br>
+    <p> Turismo arduratsuak kultura, komunitate eta ingurune naturalak zaindu  nahi ditu, inpaktu negatiboak minimizatuz eta helmugetarako eta biztanleentzako onurak maximizatuz. Kontzientziaz eta asmoz bidaiatzeko modu bat da. </p> <br> <br>
+
+      <p>
+    TipiTopak benetako esperientzia jasangarriekin lotzen ditu bidaiari arduratsuak pp-ak hezten, gidatzen eta zubi bat sortzen du bisitarien eta tokiko komunitateen artean, 
+    helmuga bakoitzaren errespetua eta zaintza sustatuz. </p>
+    
+
+
+
+
+
+  </div>
+  <div class="finalfoot2">
+<img src="Recursos/iratxe.png" class="iratxe">
+    <a class="a5"> Zure bidai laguna </a> <br> <br> <br> <br>
+    <p> Tipi bere lurren narriadura ikusitako euskal iratxo berezia da. Euskal Herriko<br> natura eta kultura babesteko kezkatuta, ekintzara pasatzea erabaki zuen eta<br>TipiToparekin
+    bat egin zuen, turismoaren eragina eraldatzeko helburuarekin </p> <br> <br>
+
+      <p> Gaur egun, Tipi erabiltzaile guztien gida bihurtu da, bidai bakoitza<br> ingurumenari eta tokiko komunitateei mesede egiten dien esperientzia bihurtuz. </p>
+
+
+  </div>
+  <div class="footermedia">
+    <img class="prif" src="Recursos/local.png"> <img class="prof"  src="Recursos/tlf.png"> <img class="pruf" src="Recursos/enviar.png">
+</div>
+  
+</body>
+</html>
